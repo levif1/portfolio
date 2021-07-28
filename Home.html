@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Levi Fogle Portfolio" />
+    <link rel="stylesheet" href="./home.css" />
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>Levi Fogle Portfolio</title>
+</head>
+
+<body>
+    <div id="root" class="container-fluid bg-dark text-white">
+        <div class="container p-3 my-3 text-center">
+            <h2>About Me</h2>
+            <div class="container">
+                <img class="card-img-top rounded float-left" style="width: 20%; max-width: 300px;" src="./resources/me.jfif"
+                    alt="Picture of me" />
+                <p class="float-right">
+                    My name is Levi Fogle.  
+                    I went to school at Southern Illinois University of Edwardsville to get my bachelors degree in computer science with a minor in mathematics.
+                    I'm currently 10 classes away from graduating, but am currently not enrolled due to financial reasons.
+                    I've been developing websites for around 3 years professionally, and 5 years if you include developement I've done in my free time.
+                </p>
+            </div>
+        </div>
+
+        <div class="p-3 my-3 text-center">
+            <h2>My websites</h2>
+
+
+            <div class="card p-3 my-3 text-center bg-primary">
+                <div class="card-header text-center">Fogle Peripherals</div>
+                <div class="card-body">
+                    <img class="card-img-top rounded myImage" style="width: 30%; max-width: 500px;" src="./resources/e-com.JPG" alt="Fogle Peripherals image" />
+                    <p class="card-text">
+                        A single page ecommerce store made with react, commerce.js, stripe, material-ui.  The site allows
+                        a store owner to use commerce js to manage the content displayed on the page. 
+                        It uses stripe for the handling payment processing, and for storing customer addresses.
+                        Commerce.js is used for the backend storing of products, and the categories.
+                        material-ui is the front end formatting, similar to bootstrap.
+                    </p>
+
+                    <a class="btn btn-outline-dark btn-block text-center" href="https://levi-ecommerce.netlify.app/">Check it out</a>
+                </div>
+                
+            </div>
+
+            <div class="card p-3 my-3 text-center bg-primary">
+                <div class="card-header text-center">Esports Dashboard</div>
+                <div class="card-body">
+
+                        <img class="card-img-top rounded myImage" style="width: 30%; max-width: 500px;" src="./resources/dashboard.JPG" alt="Esports Dashboard image" />
+
+                        <p class="card-text">
+                            A google chrome extention that focuses on League of Legends esports.  
+                            The dashboard has the schedule, and stats for all League pro games in North America (LCS), and Europe(LEC).
+                            It allows users to also add favorite links, so they can use a button to go to that website.
+                            All the data is grabbed from Leagues creator, Riot, via an API.
+                            The extention is created exclusively react.  
+                            Currently working on making this its own website instead of a chrome extention.
+                        </p>
+                        <a class="btn btn-outline-dark text-center btn-block"
+                            href="https://chrome.google.com/webstore/detail/esports-dashboard-the-esp/dehlfbfgppbnkjjdpclojmnbpbaniimd?hl=en-US">
+                                Check it out
+                        </a>
+
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
